@@ -20,7 +20,6 @@ const librarySelect = document.querySelector(".libraryDiv");
 const busSelect = document.querySelector(".busDiv");
 const vitaSelect = document.querySelector(".vitaDiv");
 
-
 libraryTab.addEventListener("click", function(){
     librarySelect.setAttribute("id","libraryShow");
     busSelect.setAttribute("id","busHide");

@@ -50,6 +50,14 @@ body{
     padding-left: 100px;
 
 }
+/*
+    ABOUT DIV
+*/
+
+#aboutDiv{
+    height: 100vh;
+    width: 100%;
+}
 
 /*
     PROJECTS DIV
