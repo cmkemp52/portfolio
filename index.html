@@ -2,11 +2,36 @@
 <html>
     <head>
         <title>Christopher Kemp</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Concert+One&display=swap">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
     </head>
     <body>
         <div id="startDiv">
-            <h1>Welcome</h1>
+            <nav id="startNav">
+                <a href="/About" id="navLink">About</a>
+                <a href="#projectsDiv" id="navLink">Projects</a>
+            </nav>
+            <div id="startContent">
+                <div id="startTextContainer">
+                    <h1>Christopher Kemp</h1>
+                    <h3>Developer</h3>
+                </div>
+            </div>
+        </div>
+        <div id="projectsDiv">
+            <nav id="projectsNav">
+                <p id="linkLibrary">Library Light</p>
+                <p id="linkBus">Bus Talker</p>
+                <p id="linkVita">MyVitaLog</p>
+            </nav>
+            <div id="infoContainer">
+                <div id="libraryHide" class="libraryDiv">
+                </div>
+                <div id="busShow" class="busDiv">
+                </div>
+                <div id="vitaHide" class="vitaDiv">
+                </div>
+            </div>
         </div>
         <script src="scripts/three.r92.min.js"></script>
         <script src="scripts/vanta.birds.min.js"></script>
