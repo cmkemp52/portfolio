@@ -25,14 +25,7 @@ body{
     display: flex;
     justify-content: flex-end;
 }
-#navLink{
-    text-decoration: none;
-    font-family: 'Concert One';
-    color: white;
-    font-size: 2em;
-    padding-right: 30px;
-    padding-top:5px;
-}
+
 /*
     START DIV
 */
@@ -45,16 +38,18 @@ body{
 }
 #startContent{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    height: 100%;
 }
 #startTextContainer{
     font-size: 2em;
     cursor: default;
-    padding-left: 100px;
+    padding-left: 10%;
+    text-align: end;
 }
 svg{
-    max-width: 8%;
+    max-width: 15%;
     padding: 1%;
 }
 /*
@@ -108,7 +103,14 @@ svg{
     padding: 5%;
     font-size: 1.2em;
 }
-
+#navLink{
+    text-decoration: none;
+    font-family: 'Concert One';
+    color: white;
+    font-size: 1.6em;
+    padding-right: 3%;
+    padding-top:0.5%;
+}
 /*
     PROJECTS DIV
 */
@@ -202,4 +204,25 @@ nav p {
 #projectImage{
     max-width: 100%;
     border-radius: 3%;
+}
+
+/*
+    Desktop Styling
+*/
+@media screen and (min-width: 768px) {
+    #startTextContainer{
+        text-align: center;
+    }
+    #startContent{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    svg{
+        max-width: 8%;
+        padding: 1%;
+    }
+    #navLink{
+        font-size: 2em;
+    }
 }
