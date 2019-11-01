@@ -1,6 +1,6 @@
 //Vanta implimentation for starting div's background
 VANTA.BIRDS({
-    el: "#startDiv",
+    el: "#start",
     color1: 0x4b4f57,
     color2: 0xcacaca,
     colorMode: "lerpGradient",
@@ -12,6 +12,8 @@ VANTA.BIRDS({
     backgroundAlpha: 0.84
 })
 
+//projects tabs
+
 const libraryTab = document.querySelector("#linkLibrary");
 const busTab = document.querySelector("#linkBus");
 const vitaTab = document.querySelector("#linkVita");
@@ -22,16 +24,16 @@ const vitaSelect = document.querySelector(".vitaDiv");
 
 libraryTab.addEventListener("click", function(){
     librarySelect.setAttribute("id","libraryShow");
-    busSelect.setAttribute("id","busHide");
-    vitaSelect.setAttribute("id","vitaHide");
+    busSelect.setAttribute("id","projectHide");
+    vitaSelect.setAttribute("id","projectHide");
 });
 busTab.addEventListener("click", function(){
-    librarySelect.setAttribute("id","libraryHide");
+    librarySelect.setAttribute("id","projectHide");
     busSelect.setAttribute("id","busShow");
-    vitaSelect.setAttribute("id","vitaHide");
+    vitaSelect.setAttribute("id","projectHide");
 });
 vitaTab.addEventListener("click", function(){
-    librarySelect.setAttribute("id","libraryHide");
-    busSelect.setAttribute("id","busHide");
+    librarySelect.setAttribute("id","projectHide");
+    busSelect.setAttribute("id","projectHide");
     vitaSelect.setAttribute("id","vitaShow");
 });

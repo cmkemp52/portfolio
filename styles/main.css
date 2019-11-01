@@ -5,7 +5,6 @@
 html{
     scroll-behavior: smooth;
 }
-
 body{
     margin: 0px;
     background-color: #071930;
@@ -14,22 +13,18 @@ body{
 }
 
 /*
-    START DIV
+    NAV BAR
 */
-
-#startDiv{
-    width:100%;
-    height:100vh;
-    margin: 0px;
-    padding: 0px;
-}
-
-#startNav{
+#navContainer{
+    position: fixed;
+    z-index: 99;
     height: 100px;
+    width: 100%;
+}
+#topNav{
     display: flex;
     justify-content: flex-end;
 }
-
 #navLink{
     text-decoration: none;
     font-family: 'Concert One';
@@ -38,7 +33,16 @@ body{
     padding-right: 30px;
     padding-top:5px;
 }
+/*
+    START DIV
+*/
 
+#start{
+    width:100%;
+    height:100vh;
+    margin: 0px;
+    padding: 0px;
+}
 #startContent{
     display: flex;
     justify-content: flex-start;
@@ -48,22 +52,68 @@ body{
     font-size: 2em;
     cursor: default;
     padding-left: 100px;
-
+}
+svg{
+    max-width: 8%;
+    padding: 1%;
 }
 /*
     ABOUT DIV
 */
 
-#aboutDiv{
+#about{
     height: 100vh;
     width: 100%;
+}
+
+#aboutTitle{
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+}
+#aboutContent{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+#aboutImg{
+    max-height: 50%;
+}
+#aboutPortrait{
+    max-width: 100%;
+    border-radius: 2em;
+    padding: 1%
+}
+#aboutSkills{
+    display: grid;
+    grid-template-rows: 25% 75%;
+    max-width: 20%;
+    font-size: 1.2em;
+}
+#skillsTitle{
+    grid-column: 1/3;
+    text-align: center;
+    font-size: 2em;
+    margin: 0px;
+    margin-bottom: 1%;
+}
+#skillsList{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 47% 47%;
+    grid-template-rows: 22% 22% 22% 22%;
+    gap: 3%;
+}
+#aboutText{
+    padding: 5%;
+    font-size: 1.2em;
 }
 
 /*
     PROJECTS DIV
 */
 
-#projectsDiv{
+#projects{
     height: 100vh;
     display:grid;
     grid-template-columns: 20% 80%;
@@ -91,7 +141,6 @@ nav p {
     margin-left: 3%;
     cursor: pointer;
 }
-
 #infoContainer{
     margin: 2%;
     margin-left: 0px;
@@ -103,13 +152,12 @@ nav p {
 }
 #libraryShow{
     background-color: rgb(103, 27, 27);
-    height: 100%;
-    width: 100%;
+    height: 98%;
+    width: 98%;
     border-radius: 2em;
+    padding: 1.5%;
 }
-#libraryHide{
-    display:none;
-}
+
 /* Bus Talker page */
 #linkBus{
     /*unselected color*/
@@ -117,13 +165,12 @@ nav p {
 }
 #busShow{
     background-color: rgb(140, 65, 0);
-    height: 100%;
-    width: 100%;
+    height: 98%;
+    width: 98%;
     border-radius: 2em;
+    padding: 1.5%;
 }
-#busHide{
-    display:none;
-}
+
 /* MyVitaLog page */
 #linkVita{
     /*unselected color*/
@@ -131,11 +178,28 @@ nav p {
 }
 #vitaShow{
     background-color: rgb(1, 53, 1);
-    height: 100%;
-    width: 100%;
+    height: 98%;
+    width: 98%;
     border-radius: 2em;
-}
-#vitaHide{
-    display:none;
+    padding: 1.5%;
 }
 
+#projectHide{
+    display:none;
+}
+#projectTitle{
+    width:100%;
+    text-align: center;
+}
+#projectContent{
+    display:grid;
+    grid-template-columns: 70% 30%;
+}
+#projectText{
+    padding: 2%;
+    font-size: 1.5em;
+}
+#projectImage{
+    max-width: 100%;
+    border-radius: 3%;
+}
