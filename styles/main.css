@@ -24,6 +24,9 @@ body{
     display: flex;
     justify-content: flex-end;
 }
+#navLink{
+    margin-left: 2%;
+}
 
 /*
     START DIV
@@ -212,19 +215,32 @@ nav p {
     Desktop Styling
 */
 @media screen and (min-width: 768px) {
+    /*
+        Start and Nav
+    */
+    #navLink{
+        font-size: 2em;
+    }
+    #startContent{
+        justify-content: flex-start;
+    }
     #startTextContainer{
-        text-align: center;
+        justify-content: flex-start;
+        text-align: left;
     }
     svg{
         max-width: 8%;
     }
-    #navLink{
-        font-size: 2em;
-    }
+    /*
+        About page
+    */
     #aboutContent{
         grid-template-columns: 20% 80%;
     }
     #aboutSideContent{
         display: block;
+    }
+    #aboutImg{
+        max-width: 100%;
     }
 }
