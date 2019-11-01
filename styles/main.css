@@ -12,8 +12,7 @@ body{
     font-family: 'Concert One';
 }
 
-/*
-    NAV BAR
+/*    NAV BAR
 */
 #navContainer{
     position: fixed;
@@ -57,7 +56,7 @@ svg{
 */
 
 #about{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -66,13 +65,16 @@ svg{
     display: flex;
     justify-content: center;
 }
+#aboutSideContent{
+    display: flex;
+}
 #aboutContent{
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 100%;
 }
-
 #aboutImg{
     max-height: 50%;
+    max-width: 35%;
 }
 #aboutPortrait{
     max-width: 100%;
@@ -213,16 +215,16 @@ nav p {
     #startTextContainer{
         text-align: center;
     }
-    #startContent{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
     svg{
         max-width: 8%;
-        padding: 1%;
     }
     #navLink{
         font-size: 2em;
+    }
+    #aboutContent{
+        grid-template-columns: 20% 80%;
+    }
+    #aboutSideContent{
+        display: block;
     }
 }
