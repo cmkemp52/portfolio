@@ -251,11 +251,11 @@ nav p {
         height: 100vh;
         display:grid;
         grid-template-columns: 20% 80%;
+        padding-top: 1%;
     }
     #projectsNav{
         height: 100%;
         display: flex;
-        justify-content: space-around;
         align-content: center;
         flex-direction: column;
     }
@@ -269,6 +269,7 @@ nav p {
         font-size: 2em;
         padding-right: 0px;
         margin-left: 3%;
+        margin-top: 15%;
         cursor: pointer;
     }
     #infoContainer{
