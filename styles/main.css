@@ -119,26 +119,26 @@ svg{
 /*
     PROJECTS DIV
 */
-
-#projects{
-}
-
 #projectsNav{
     width: 100%;
     margin: 0px;
     padding: 0px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
 }
 nav p {
     display: flex;
     justify-content: center;
     align-items: center;
     height:20%;
-    width: 100%;
-    border-radius: 1em 0px 0px 1em;
+    width: 80%;
+    border-radius: 1em;
     font-size: 2em;
-    padding-right: 0px;
-    margin-left: 3%;
-    cursor: pointer;
+    margin: 0px;
+    margin-right: 2%;
+    margin-left: 2%;
 }
 #infoContainer{
     margin: 2%;
@@ -245,9 +245,18 @@ nav p {
     }
     #projectsNav{
         height: 100%;
-        display:flex;
-        flex-direction:column;
+
+    }
+    nav p {
+        display: flex;
         justify-content: center;
         align-items: center;
+        height:20%;
+        width: 100%;
+        border-radius: 1em 0px 0px 1em;
+        font-size: 2em;
+        padding-right: 0px;
+        margin-left: 3%;
+        cursor: pointer;
     }
 }
