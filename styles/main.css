@@ -17,7 +17,7 @@ body{
 #navContainer{
     position: fixed;
     z-index: 99;
-    height: 100px;
+    height: auto;
     width: 100%;
 }
 #topNav{
@@ -119,34 +119,39 @@ svg{
 /*
     PROJECTS DIV
 */
+#projects{
+    padding-top: 10%;
+}
+
 #projectsNav{
     width: 100%;
     margin: 0px;
     padding: 0px;
     display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
+    align-content: center;
+    flex-direction: column;
 }
 nav p {
     display: flex;
     justify-content: center;
     align-items: center;
-    height:20%;
+    height:100%;
     width: 80%;
     border-radius: 1em;
     font-size: 2em;
     margin: 0px;
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 #infoContainer{
     margin: 2%;
-    margin-left: 0px;
+    margin-top: 0px;
 }
 /* Library Light page */
-#linkLibrary{
-    /*unselected color*/
+#libraryLinkSelect{
+    display: none;
+}
+#libraryLink{
     background-color: rgb(103, 27, 27);
 }
 #libraryShow{
@@ -156,10 +161,11 @@ nav p {
     border-radius: 2em;
     padding: 1.5%;
 }
-
 /* Bus Talker page */
-#linkBus{
-    /*unselected color*/
+#busLinkSelect{
+    display: none;
+}
+#busLink{
     background-color: rgb(140, 65, 0);
 }
 #busShow{
@@ -171,8 +177,10 @@ nav p {
 }
 
 /* MyVitaLog page */
-#linkVita{
-    /*unselected color*/
+#vitaLinkSelect{
+    display: none;
+}
+#vitaLink{
     background-color: rgb(1, 53, 1);
 }
 #vitaShow{
@@ -182,7 +190,7 @@ nav p {
     border-radius: 2em;
     padding: 1.5%;
 }
-
+/* Styling for all pages */
 #projectHide{
     display:none;
 }
@@ -192,7 +200,7 @@ nav p {
 }
 #projectContent{
     display:grid;
-    grid-template-columns: 70% 30%;
+    grid-template-rows: auto;
 }
 #projectText{
     padding: 2%;
@@ -201,6 +209,7 @@ nav p {
 #projectImage{
     max-width: 100%;
     border-radius: 3%;
+    grid-row: 1;
 }
 
 /*
@@ -245,7 +254,10 @@ nav p {
     }
     #projectsNav{
         height: 100%;
-
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        flex-direction: column;
     }
     nav p {
         display: flex;
@@ -258,5 +270,29 @@ nav p {
         padding-right: 0px;
         margin-left: 3%;
         cursor: pointer;
+    }
+    #infoContainer{
+        margin: 2%;
+        margin-left: 0px;
+    }
+    #libraryLinkSelect{
+        background-color: rgb(103, 27, 27);
+        display:flex;
+    }
+    #busLinkSelect{
+        background-color: rgb(140, 65, 0);
+        display:flex;
+    }
+    #vitaLinkSelect{
+        background-color: rgb(1, 53, 1);
+        display:flex;
+    }
+    #projectContent{
+        display:grid;
+        grid-template-columns: 70% 30%;
+    }
+    #projectImage{
+        grid-row:auto;
+        grid-column: auto;
     }
 }
