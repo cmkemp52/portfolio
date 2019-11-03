@@ -121,18 +121,10 @@ svg{
 */
 
 #projects{
-    height: 100vh;
-    display:grid;
-    grid-template-columns: 20% 80%;
 }
 
 #projectsNav{
-    height: 100%;
     width: 100%;
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
     margin: 0px;
     padding: 0px;
 }
@@ -242,5 +234,20 @@ nav p {
     }
     #aboutImg{
         max-width: 100%;
+    }
+    /*
+        Projects
+    */
+    #projects{
+        height: 100vh;
+        display:grid;
+        grid-template-columns: 20% 80%;
+    }
+    #projectsNav{
+        height: 100%;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
     }
 }
