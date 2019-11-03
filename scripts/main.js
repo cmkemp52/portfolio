@@ -47,9 +47,19 @@ vitaTab.addEventListener("click", function(){
     vitaTab.setAttribute("id","vitaLinkSelect");
 });
 
-console.log(window.innerWidth);
 
-{if(window.innerWidth > 768){
+
+if(window.innerWidth > 768){
     document.querySelector(".busImage").setAttribute("src", "images/bustalker.png")
     document.querySelector(".vitaImage").setAttribute("src", "images/myvitalog.png")
-}}
+}
+window.addEventListener("resize", ()=>{
+    if(window.innerWidth > 768){
+        document.querySelector(".busImage").setAttribute("src", "images/bustalker.png")
+        document.querySelector(".vitaImage").setAttribute("src", "images/myvitalog.png")
+    }
+    if(window.innerWidth < 768){
+        document.querySelector(".busImage").setAttribute("src", "images/bustalkerWide.png")
+        document.querySelector(".vitaImage").setAttribute("src", "images/myvitalogWide.png")
+    }
+})
