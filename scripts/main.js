@@ -49,16 +49,16 @@ vitaTab.addEventListener("click", function(){
 
 
 
-if(window.innerWidth >= 768){
+if(window.innerWidth >= 950){
     document.querySelector(".busImage").setAttribute("src", "images/bustalker.png")
     document.querySelector(".vitaImage").setAttribute("src", "images/myvitalog.png")
 }
 window.addEventListener("resize", ()=>{
-    if(window.innerWidth > 768){
+    if(window.innerWidth >= 950){
         document.querySelector(".busImage").setAttribute("src", "images/bustalker.png")
         document.querySelector(".vitaImage").setAttribute("src", "images/myvitalog.png")
     }
-    if(window.innerWidth < 768){
+    if(window.innerWidth < 950){
         document.querySelector(".busImage").setAttribute("src", "images/bustalkerWide.png")
         document.querySelector(".vitaImage").setAttribute("src", "images/myvitalogWide.png")
     }

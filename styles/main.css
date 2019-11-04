@@ -17,8 +17,9 @@ body{
     position: fixed;
     height: auto;
     width: 100%;
-    z-index: 1;
+    z-index: 5;
     background-color: #071930;
+    padding-bottom: 0.5%;
 }
 #topNav{
     display: flex;
@@ -213,7 +214,7 @@ nav p {
 /*
     Desktop Styling
 */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 950px) {
     /*
         Start and Nav
     */
@@ -248,7 +249,8 @@ nav p {
         Projects
     */
     #projects{
-        height: 100vh;
+        min-height: 70vh;
+        max-height: 100vh;
         display:grid;
         grid-template-columns: 20% 80%;
         padding-top: 2%;
