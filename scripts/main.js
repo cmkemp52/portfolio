@@ -49,7 +49,7 @@ vitaTab.addEventListener("click", function(){
 
 
 
-if(window.innerWidth > 768){
+if(window.innerWidth >= 768){
     document.querySelector(".busImage").setAttribute("src", "images/bustalker.png")
     document.querySelector(".vitaImage").setAttribute("src", "images/myvitalog.png")
 }
