@@ -22,44 +22,5 @@ const librarySelect = document.querySelector(".libraryDiv");
 const busSelect = document.querySelector(".busDiv");
 const vitaSelect = document.querySelector(".vitaDiv");
 
-libraryTab.addEventListener("click", function(){
-    librarySelect.setAttribute("id","libraryShow");
-    busSelect.setAttribute("id","projectHide");
-    vitaSelect.setAttribute("id","projectHide");
-    libraryTab.setAttribute("id","libraryLinkSelect");
-    busTab.setAttribute("id","busLink");
-    vitaTab.setAttribute("id","vitaLink");
-});
-busTab.addEventListener("click", function(){
-    librarySelect.setAttribute("id","projectHide");
-    busSelect.setAttribute("id","busShow");
-    vitaSelect.setAttribute("id","projectHide");
-    libraryTab.setAttribute("id","libraryLink");
-    busTab.setAttribute("id","busLinkSelect");
-    vitaTab.setAttribute("id","vitaLink");
-});
-vitaTab.addEventListener("click", function(){
-    librarySelect.setAttribute("id","projectHide");
-    busSelect.setAttribute("id","projectHide");
-    vitaSelect.setAttribute("id","vitaShow");
-    libraryTab.setAttribute("id","libraryLink");
-    busTab.setAttribute("id","busLink");
-    vitaTab.setAttribute("id","vitaLinkSelect");
-});
 
 
-
-if(window.innerWidth >= 950){
-    document.querySelector(".busImage").setAttribute("src", "images/bustalker.png")
-    document.querySelector(".vitaImage").setAttribute("src", "images/myvitalog.png")
-}
-window.addEventListener("resize", ()=>{
-    if(window.innerWidth >= 950){
-        document.querySelector(".busImage").setAttribute("src", "images/bustalker.png")
-        document.querySelector(".vitaImage").setAttribute("src", "images/myvitalog.png")
-    }
-    if(window.innerWidth < 950){
-        document.querySelector(".busImage").setAttribute("src", "images/bustalkerWide.png")
-        document.querySelector(".vitaImage").setAttribute("src", "images/myvitalogWide.png")
-    }
-})

@@ -112,24 +112,17 @@
             </div>
         </div>
         <div id="projects">
-            <nav id="projectsNav">
-                <p id="libraryLink" class="linkLibrary">Library Light</p>
-                <p id="busLinkSelect" class="linkBus">Bus Talker</p>
-                <p id="vitaLink" class="linkVita">MyVitaLog</p>
-            </nav>
+            <div id="projectsTitle">
+                <h2>Projects</h2>
+            </div>
             <div id="infoContainer">
-                <div id="projectHide" class="libraryDiv">
-                    <div id="projectTitle">
-                        <h1>Library Light</h1>
-                        <h2>Under Construction</h2>
-                    </div>
-                </div>
                 <div id="busShow" class="busDiv">
                     <div id="projectTitle">
                         <h1>Bus Talker</h1>
-                        <h2>Keeping an eye on MARTA!</h2>
                     </div>
+                    <nav id="projectNav"><a id="projectLink" href="https://github.com/cmkemp52/BusTalker">Github Repo</a><a href="https://www.bustalker.com" id="projectLink">Live Site</a></nav>
                     <div id="projectContent">
+                        <img src="images/bustalkerWide.png" id="projectImage" class="busImage">
                         <div id="projectText">
                             <p>Bus Talker is a website that shows you live information about MARTA's system.</p>
                             <p>This was an early team project to create a front end product that used external APIs.</p>
@@ -141,15 +134,15 @@
                                 <li>Styled using Bootstrap and CSS</li>
                             </ul>
                         </div>
-                        <img src="images/bustalkerWide.png" id="projectImage" class="busImage">
                     </div>
                 </div>
-                <div id="projectHide" class="vitaDiv">
+                <div id="vitaShow" class="vitaDiv">
                     <div id="projectTitle">
                         <h1>MyVitaLog</h1>
-                        <h2>Keeping an eye on your health!</h2>
                     </div>
+                    <nav id="projectNav"><a id="projectLink" href="https://github.com/cmkemp52/MyVitaLog">Github Repo</a><a href="https://www.myvitalog.com" id="projectLink">Live Site</a></nav>
                     <div id="projectContent">
+                        <img src="images/myvitalogWide.png" id="projectImage" class="vitaImage">
                         <div id="projectText">
                             <p>MyVitaLog is a daily diet tracker that includes robust information about healthy eating.</p>
                             <p>This was a team full-stack Javascript project that was created in 3 days.</p>
@@ -161,7 +154,6 @@
                                 <li>Uses Express Node.js framework</li>
                             </ul>
                         </div>
-                        <img src="images/myvitalogWide.png" id="projectImage" class="vitaImage">
                     </div>
                 </div>
             </div>
