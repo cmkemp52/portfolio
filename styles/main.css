@@ -134,7 +134,6 @@ svg{
 /* Bus Talker page */
 #busShow{
     background-color: rgb(140, 65, 0);
-    height: 98%;
     width: 95%;
     border-radius: 2em;
     padding: 1.5%;
@@ -144,13 +143,17 @@ svg{
 /* MyVitaLog page */
 #vitaShow{
     background-color: rgb(1, 53, 1);
-    height: 98%;
     width: 95%;
     border-radius: 2em;
     padding: 1.5%;
     margin: 2%;
 }
 /* Styling for all pages */
+#cardContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 #projectTitle{
     width:100%;
     text-align: center;
@@ -216,29 +219,12 @@ svg{
         Projects
     */
     #projects{
-        min-height: 70vh;
+        height: 100vh;
         padding-top: 2%;
     }
     #infoContainer{
         margin: 2%;
-        margin-left: 0px;
         display: grid;
         grid-template-columns: 50% 50%;
-    }
-    #libraryLinkSelect{
-        background-color: rgb(103, 27, 27);
-        display:flex;
-    }
-    #busLinkSelect{
-        background-color: rgb(140, 65, 0);
-        display:flex;
-    }
-    #vitaLinkSelect{
-        background-color: rgb(1, 53, 1);
-        display:flex;
-    }
-    #projectImage{
-        grid-row:auto;
-        grid-column: auto;
     }
 }
