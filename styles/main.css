@@ -90,8 +90,7 @@ svg{
 }
 #aboutSkills{
     display: grid;
-    grid-template-rows: 25% 75%;
-    max-width: 20%;
+    grid-template-rows: auto auto;
     font-size: 1.2em;
 }
 #skillsTitle{
@@ -206,7 +205,7 @@ svg{
         About page
     */
     #aboutContent{
-        grid-template-columns: 20% 80%;
+        grid-template-columns: 240px 1fr;
     }
     #aboutSideContent{
         display: block;
